@@ -1,0 +1,11 @@
+[only-expanded] {
+  display: none;
+}
+
+.expanded [only-expanded] {
+  display: block;
+}
+
+.expanded [only-not-expanded] {
+  display: none !important;
+}

@@ -1,0 +1,18 @@
+<section #wrapper class="bg-neutral-800 shrink-0 rounded-2xl">
+  <div
+    #card
+    class="shadow-lg p-8 pb-4 border bg-neutral-700 border-neutral-600 transition-all duration-700 ease-out rounded-2xl text-center text-neutral-400 flex"
+    [class.expanded]="expanded"
+  >
+    <section class="flex flex-col">
+      <app-card-header [isExpanded]="expanded" (expand)="expand(card, wrapper)">
+      </app-card-header>
+
+      <app-card-skills only-expanded></app-card-skills>
+
+      <app-card-footer class="mt-auto"></app-card-footer>
+    </section>
+
+    <app-card-contact class="flex-1"></app-card-contact>
+  </div>
+</section>
