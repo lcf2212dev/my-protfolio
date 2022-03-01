@@ -1,17 +1,23 @@
-<header class="w-48 h-48 mx-16 rounded-full bg-white inline-block"></header>
+<main>
+  <app-card-header-photo></app-card-header-photo>
 
-<main class="my-4">
-  <div class="text-center">
+  <div class="text-center my-4">
     <p class="text-white"><b>Leandro Faria</b></p>
     <p>37 years old</p>
     <p><i>Frontend Developer and Designer</i></p>
   </div>
 
-  <button
-    only-not-expanded
-    class="underline text-teal-300 mt-4"
-    (click)="expand.emit()"
-  >
-    Contact me
-  </button>
+  <div class="text-teal-300 bg-neutral-700 inline-flex items-center">
+    <button
+      only-not-expanded
+      class="hover:underline z-10"
+      (click)="expand.emit()"
+    >
+      Contact me
+    </button>
+
+    <i
+      class="-translate-x-full icon duration-200 ease-out after:ease-out fas fa-arrow-right ml-2 relative after:bg-neutral-700 after:absolute after:top-0 after:left-0 after:bottom-0 after:w-full after:duration-200 after:content"
+    ></i>
+  </div>
 </main>

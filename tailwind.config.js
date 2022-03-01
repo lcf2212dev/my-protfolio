@@ -1,9 +1,10 @@
 module.exports = {
-  content: [
-    "./src/**/*.{html,ts}",
-  ],
+  corePlugins: {
+    float: false,
+  },
+  content: ["./src/app/**/*.{html,ts}"],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};

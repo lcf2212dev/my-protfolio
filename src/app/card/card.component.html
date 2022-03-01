@@ -5,7 +5,11 @@
     [class.expanded]="expanded"
   >
     <section class="flex flex-col">
-      <app-card-header [isExpanded]="expanded" (expand)="expand(card, wrapper)">
+      <app-card-header
+        class="mb-4"
+        [isExpanded]="expanded"
+        (expand)="expand(card, wrapper)"
+      >
       </app-card-header>
 
       <app-card-skills only-expanded></app-card-skills>

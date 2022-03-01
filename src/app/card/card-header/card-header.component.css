@@ -1,0 +1,7 @@
+main:hover .icon {
+  transform: translateX(0%);
+}
+
+main:hover .icon:after {
+  left: -100%;
+}
